@@ -2,7 +2,7 @@
  name: PB execution
  hosts: client1
  tasks:
- - name:code to install ifconfig command
+ - name: code to install ifconfig command
    yum:
     name: net-tool
     state: present
