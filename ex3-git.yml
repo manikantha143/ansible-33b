@@ -1,0 +1,10 @@
+-
+ name: example on yum module
+ hosts: client1
+ tasks: 
+  - name: code to install git application
+    yum:
+     name: git
+     state: present
+     
+     
