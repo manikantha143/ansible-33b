@@ -4,7 +4,7 @@
  tasks:
   - name: code to create a folder
     command:
-    cmd: mkdir /opt/russia
+     cmd: mkdir /opt/russia
 
   - name: code to create a file under that folder
     command: 
