@@ -42,9 +42,10 @@
       dest: /usr/share/nginx/html.html
       content: "<html>
       <body>
-      <h1> HAPPY BIRTHDAY </h1>
+      <h1> NGINX PROJECT SAMPLE </h1>
       </body>
       </html>"
       
+
       
       
