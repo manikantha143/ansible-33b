@@ -7,19 +7,19 @@
       name: epel-release
       state: present
 
-  - name: code to install apache
+  - name: code to install nginx
     package: 
-      name: httpd
+      name: nginx
       state: present
 
   - name: code to start the service
     service: 
-      name: httpd
+      name: nginx
       state: started
 
   - name: code to enable httpd at boot time
     service:
-      name: httpd
+      name: nginx
       enabled: yes
 
   - name: code to create a directory
@@ -34,16 +34,17 @@
 
   - name: code to write a message into file
     copy:
-      content: "Apache successfully installed"
+      content: "Nginx successfully installed"
       dest: /opt/apache-logs/apache-log.logs
 
-  - name: code to write html code in apache web server
+  - name: code to write html code in nginx web server
     copy:
-      dest: /var/www/html/index.html
+      dest: /usr/share/nginx/html.html
       content: "<html>
       <body>
       <h1> HAPPY BIRTHDAY </h1>
       </body>
       </html>"
+      
       
       
