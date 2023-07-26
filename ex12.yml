@@ -5,10 +5,9 @@
   - name: below code for yum installation using loops
     yum:
      name: "{{ item }}"
-     state: present
-    with_items:
+     state: absent
+    loop:
      - git
      - docker
      - net-tool
      - finger
-     
