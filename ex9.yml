@@ -1,0 +1,15 @@
+-
+ name: pb on use case of file module and copy module
+ hosts: client1
+ tasks:
+  - name: code to create a file notes.txt
+    file: 
+     path: /opt/notes.txt
+     state: touch
+
+  - name: code to write message into file
+    copy:
+     content: "HELLO WORLD"
+     dest: /opt/notes.txt
+     
+     
