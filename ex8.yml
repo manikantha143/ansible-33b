@@ -1,6 +1,6 @@
 -
  name: code for project
- hosts: client1
+ hosts: host1
  tasks:
   - name: update package cache
     package:
@@ -45,7 +45,7 @@
       <h1> NGINX PROJECT SAMPLE </h1>
       </body>
       </html>"
-      
+
       
 
       
